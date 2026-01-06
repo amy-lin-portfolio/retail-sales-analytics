@@ -1,13 +1,12 @@
 # Retail Sales Analytics Project (SQL + dbt + PostgreSQL)
 
-This project demonstrates a complete analytical workflow using **PostgreSQL**, **dbt**, and **SQL** to transform raw retail sales data into actionable insights.  
-It is designed as a portfolio project to showcase real-world data analysis, data modeling, and business decision-making.
-
----
-
 ## Project Overview
 
+This project demonstrates a complete analytical workflow using **PostgreSQL**, **dbt**, and **SQL** to transform raw retail sales data into actionable insights.  
+
 The goal of this project is to analyze retail sales performance across regions, product categories, customer behavior, and discounting practices. Using SQL and dbt, I built a clean transformation pipeline and conducted exploratory data analysis (EDA) to uncover insights about profitability, customer retention, and operational strategy.
+
+It is designed as a portfolio project to showcase real-world data analysis, data modeling, and business decision-making.
 
 ---
 
@@ -31,7 +30,8 @@ Raw CSV → PostgreSQL (raw schema)
 
 ---
 
-## Key Findings
+## Key Takeaways
+
 - **Seasonality:** Sales peak every November–December due to holiday demand.  
 - **Category Performance:** Technology and Office Supplies drive the highest profit.  
 - **Discounting Issue:** Furniture receives the highest discounts but yields the lowest profit.  
@@ -50,6 +50,7 @@ Raw CSV → PostgreSQL (raw schema)
 ---
 
 ## How to Run
+
 ### 1. Load raw data:
 ```sql
 \copy raw.orders FROM 'Sample - Superstore.csv' CSV HEADER;
@@ -62,8 +63,10 @@ dbt test
 ### 3. EDA
 sql/eda_queries.sql
 
+---
+
 ## Contact
 
-Feel free to reach out with questions about the project!
-Email: jlin673@gatech.edu
+For questions, please contact: jlin673@gatech.edu
+
 
